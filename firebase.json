@@ -1,0 +1,23 @@
+{
+	"hosting": {
+		"public": "public",
+		"site": "mercer",
+		"rewrites": [
+			{
+				"source": "**/**",
+				"function": "nextServer"
+			}
+		]
+	},
+	"functions": {
+		"source": ".",
+		"ignore": [
+			".firebase/**",
+			".firebaserc",
+			"firebase.json",
+			"**/node_modules/**",
+			"**/public/**"
+		],
+		"runtime": "nodejs18"
+	}
+}

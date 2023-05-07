@@ -1,15 +1,15 @@
-import Head from "next/head";
-import Sidebar from "../components/Sidebar/Sidebar";
+import Head from 'next/head';
+import Sidebar from '../components/Sidebar/Sidebar';
 
 export default function Home() {
-  return (
-    <div>
-      <Head>
-        <title>WhatsApp Clone 2.0</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+	return (
+		<div>
+			<Head>
+				<title>Converge</title>
+				<link rel="icon" href="/favicon.ico" />
+			</Head>
 
-      <Sidebar />
-    </div>
-  );
+			<Sidebar />
+		</div>
+	);
 }
