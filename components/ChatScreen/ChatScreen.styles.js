@@ -1,6 +1,9 @@
 import styled from 'styled-components';
 
-const Container = styled.div``;
+const Container = styled.div`
+	border-left: 3px solid whitesmoke;
+	background: radial-gradient(circle at right, #ffa949, firebrick);
+`;
 
 const Header = styled.div`
 	position: sticky;
@@ -32,9 +35,9 @@ const HeaderIcons = styled.div``;
 
 const MessageContainer = styled.div`
 	padding: 30px;
-	background: linear-gradient(to right, #bdc3c7, #2c3e50);
 	min-height: 90vh;
 `;
+// background: linear-gradient(to right, #bdc3c7, #2c3e50);
 
 const EndOfMessage = styled.div`
 	margin-bottom: 50px;
@@ -46,9 +49,9 @@ const InputContainer = styled.form`
 	padding: 10px;
 	position: sticky;
 	bottom: 0;
-	background: linear-gradient(to right, #bdc3c7, #2c3e50);
 	z-index: 100;
 `;
+// background: linear-gradient(to right, #bdc3c7, #2c3e50);
 
 const Input = styled.input`
 	flex: 1;

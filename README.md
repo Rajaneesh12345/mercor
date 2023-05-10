@@ -4,7 +4,7 @@ Built using [NextJs](https://nextjs.org/), [React](https://reactjs.org/) and [St
 
 ## Live demo
 
-[https://master--admirable-pie-66be94.netlify.app/](https://master--admirable-pie-66be94.netlify.app/)
+[Click here](https://master--admirable-pie-66be94.netlify.app/)
 
 ## How it works
 

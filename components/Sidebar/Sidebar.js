@@ -8,12 +8,7 @@ import {
 	SidebarButton,
 } from './Sidebar.styles';
 
-import { IconButton } from '@material-ui/core';
 import { auth, db } from '../../firebaseConfig/firebase';
-
-import ChatIcon from '@material-ui/icons/Chat';
-import MoreVertIcon from '@material-ui/icons/MoreVert';
-import SearchIcon from '@material-ui/icons/Search';
 
 import * as EmailValidator from 'email-validator';
 import { useAuthState } from 'react-firebase-hooks/auth';
@@ -54,20 +49,22 @@ export default function Sidebar() {
 
 	return (
 		<Container>
-			<Header
-				onClick={() => {
-					auth.signOut();
-					location.replace('/');
-				}}
-			>
-				<UserAvatar src={user.photoURL} />
-				SignOut
-			</Header>
-			<SidebarButton onClick={createChat}>START A NEW CHAT</SidebarButton>
+			<div className="scroll-box">
+				<Header
+					onClick={() => {
+						auth.signOut();
+					}}
+				>
+					<UserAvatar src={user.photoURL} />
+					SignOut
+				</Header>
+				<SidebarButton onClick={createChat}>START A NEW CHAT</SidebarButton>
 
-			{chatsSnapshot?.docs.map(chat => (
-				<Chat key={chat.id} id={chat.id} users={chat.data().users} />
-			))}
+				{chatsSnapshot?.docs.map(chat => (
+					<Chat key={chat.id} id={chat.id} users={chat.data().users} />
+				))}
+			</div>
+			<div className="cover-bar" />
 		</Container>
 	);
 }
