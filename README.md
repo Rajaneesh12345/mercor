@@ -1,16 +1,15 @@
 # Mercor Chat Application
 
-Built using [NextJs](https://nextjs.org/), [React](https://reactjs.org/) and [Styled Components](https://styled-components.com/).
-
 ## Live demo
 
 [Click here](https://master--admirable-pie-66be94.netlify.app/)
 
 ## How it works
 
--  Initialy user has to login using Google Authentication.
--  You have real-time messaging and 1 on 1 conversations with other people logged on the app.
+-  Initialy user has to login using Google Authentication only.
+-  Can have real-time messaging and 1 on 1 conversations with other people logged on to the app.
 -  Can create conversations with different people by adding their gmail address.
+-  can share the chat with other logged in users by sending the link directly.
 
 ## Built using
 
@@ -26,11 +25,11 @@ Built using [NextJs](https://nextjs.org/), [React](https://reactjs.org/) and [St
 
 ## Future Updates
 
--  Can add image and file uploads
--  Can add video calls
--  Can add voice calls
--  Can add group chats
--  Can add emojis
+-  To add image and file uploads
+-  To add video calls
+-  To add voice calls
+-  To add group chats
+-  To add emojis
 
 ## Platfrom
 
